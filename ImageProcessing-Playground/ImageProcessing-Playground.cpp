@@ -15,7 +15,7 @@ int main()
 	Mat grayImg;
 	cvtColor(img, grayImg, COLOR_BGR2GRAY);
 
-	Mat opencvImg32FC1;												// will be used for opencv operations
+	Mat opencvImg32FC1;											// will be used for opencv operations
 	Mat bitwiseImg32FC1;											// will be used for bitwise processing
 	grayImg.convertTo(opencvImg32FC1, CV_32FC1, 1.0 / 255.0);
 	grayImg.convertTo(bitwiseImg32FC1, CV_32FC1, 1.0 / 255.0);
